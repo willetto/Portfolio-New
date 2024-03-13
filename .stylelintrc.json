@@ -1,0 +1,11 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-clean-order"],
+	"overrides": [
+		{
+			"files": ["*.css"],
+			"rules": {
+				"property-no-vendor-prefix": null
+			}
+		}
+	]
+}
