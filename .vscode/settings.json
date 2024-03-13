@@ -1,0 +1,4 @@
+{
+	"cSpell.words": ["stylelint"],
+	"stylelint.validate": ["css", "svelte", "html"]
+}

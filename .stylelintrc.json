@@ -1,11 +1,15 @@
 {
-	"extends": ["stylelint-config-standard", "stylelint-config-clean-order"],
+	"extends": ["stylelint-config-html/svelte", "stylelint-config-clean-order"],
 	"overrides": [
 		{
 			"files": ["*.css"],
 			"rules": {
-				"property-no-vendor-prefix": null
+				"property-no-vendor-prefix": null,
+				"value-keyword-case": "lower",
+				"no-duplicate-selectors": true,
+				"selector-pseudo-element-colon-notation": "double"
 			}
 		}
-	]
+	],
+	"defaultSeverity": "error"
 }
