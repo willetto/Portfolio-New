@@ -7,4 +7,6 @@
 	--c-green-o9: oklch(55% 0.14 172 / 0.9);
 	--c-yellow: oklch(90.07% 0.21 98.27);
 	--c-yellow-o9: oklch(90.07% 0.21 98.27 / 0.9);
+	--c-orange: oklch(66.98% 0.224 43.225);
+	--c-orange-o9: oklch(66.98% 0.224 43.225 / 0.9);
 }
