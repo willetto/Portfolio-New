@@ -5,9 +5,9 @@
 <div class="hero-wrapper" style={`--texture-url: url(${texture})`}>
   <h1 class="h0 hero-title" title="Hi, I'm Trey">Hi, I'm Trey</h1>
   <div class="subtitles">
-    <p class="h1">I work as a <span class="highlight">front-end web developer.</span></p>
     <p class="h1">I care about <span class="highlight">crafting thoughtfully.</span></p>
-    <p class="h1">I am to <span class="highlight">empower others.</span></p>
+    <p class="h1">I work as a <span class="highlight">front-end web developer.</span></p>
+    <p class="h1">I aim to <span class="highlight">empower others.</span></p>
   </div>
 </div>
 <style>
@@ -16,7 +16,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 
@@ -27,6 +27,7 @@
 
     background-color: var(--c-white);
     &::before {
+      pointer-events: none;
       content: "";
 
       position: absolute;
@@ -47,17 +48,18 @@
   }
   .hero-title { 
     position: relative;
-    background-image: linear-gradient(90deg, #F36000 0%, var(--c-yellow) 100%);
+    background-image: linear-gradient(120deg, var(--c-orange) 0%, var(--c-yellow) 100%);
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
     &::before {
+      pointer-events: none;
       content: attr(title);
 
       position: absolute;
       inset: 0;
 
-      text-shadow: -3px 3px 5px #fff, 0 0 0 var(--c-black);
+      text-shadow: -3px 2px 6px #fff, 0 0 0 var(--c-black);
       
       opacity: 0.4;
       background-color: #000;
@@ -75,6 +77,7 @@
     position: relative;
     
     &::before {
+      pointer-events: none;
       content: "";
 
       position: absolute;
