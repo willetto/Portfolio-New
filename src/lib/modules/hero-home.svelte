@@ -12,8 +12,15 @@
 </div>
 <style>
   .hero-wrapper {
+    --local-bg-color: var(--c-white);
+    --local-font-color: var(--c-green);
+    --local-highlight-gradient: conic-gradient(from 190deg at 0% 0% in oklch, var(--c-yellow) 60%, var(--c-yellow-o8) 75%, var(--c-yellow) 95%);
+    --local-highlight-blend: multiply;
+    --local-texture-opacity: 0.2;
+
     position: relative;
 
+overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -25,30 +32,32 @@
 
     text-align: center;
 
-    background-color: var(--c-white);
+    background-color: var(--local-bg-color);
+
+    transition: background-color 0.3s ease-in-out;
     &::before {
       pointer-events: none;
       content: "";
 
       position: absolute;
       z-index: 0;
-      bottom: 0;
+      bottom: -100px;
       left: 0;
 
       width: 100%;
-      height: 200px;
+      height: 400px;
 
-      opacity: 0.8;
+      opacity: var(--local-texture-opacity);
       background-image: var(--texture-url);
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: cover;
-      mix-blend-mode: darken;
+      mix-blend-mode: multiply;
     }
   }
   .hero-title { 
     position: relative;
-    background-image: linear-gradient(120deg, var(--c-orange) 0%, var(--c-yellow) 100%);
+    background-image: var(--gradient-orange);
     background-clip: text;
 
     -webkit-text-fill-color: transparent;
@@ -62,20 +71,43 @@
       text-shadow: -3px 2px 6px #fff, 0 0 0 var(--c-black);
       
       opacity: 0.4;
-      background-color: #000;
+      background-color: var(--c-black);
       background-clip: text;
       mix-blend-mode: multiply;
 
     }
   }
   .h1 {
-    color: var(--c-green);
+    color: var(--local-font-color);
+    transition: color 0.3s ease-in-out;
+
   }
   .subtitles{
-    z-index: 1;}
+    /* z-index: 1; */
+  }
   .highlight {
     position: relative;
-    
+    color: var(--local-font-color);
+    transition: color 0.3s ease-in-out;
+
+    &::after{
+      pointer-events: none;
+      content: "";
+
+      position: absolute;
+      z-index: 2;
+      top: 37%;
+      right: .5rem;
+
+      width: 99%;
+      height: 60%;
+
+      opacity: .5;
+      background-image: var(--noise-1);
+      mix-blend-mode: overlay;
+
+    }
+
     &::before {
       pointer-events: none;
       content: "";
@@ -87,11 +119,23 @@
       width: 99%;
       height: 60%;
 
-      background-color: var(--c-yellow-o9);
-      mix-blend-mode: multiply;
-
+      background-image: var(--local-highlight-gradient);
+      background-size: cover;
+      background-blend-mode: screen;
+      mix-blend-mode: var(--local-highlight-blend);
     }
   }
 
+  @media (prefers-color-scheme: dark) {
+    .hero-wrapper {
+      --local-bg-color: var(--c-blue-dark);
+      --local-font-color: var(--c-white-o9);
+      --local-highlight-gradient: conic-gradient(from 190deg at 0% 0% in oklch, var(--c-blue-o8) 60%, var(--c-blue) 75%, var(--c-blue-o8) 95%);
+      --local-highlight-blend: screen;
+      --local-texture-opacity:0.4;
+      /* mix-blend-mode: ; */
+
+    }
+  }
   
 </style>

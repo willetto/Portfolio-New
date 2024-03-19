@@ -5,8 +5,16 @@
 	--c-white-o9: oklch(96.41% 0 102.07 / 0.9);
 	--c-green: oklch(55% 0.14 172);
 	--c-green-o9: oklch(55% 0.14 172 / 0.9);
+	--c-blue: oklch(37% 0.206 261.5);
+	--c-blue-o9: oklch(37% 0.206 261.5 / 0.9);
+	--c-blue-o8: oklch(37% 0.206 261.5 / 0.8);
+	--c-blue-dark: oklch(33.94% 0.1888 261.5);
+	--c-blue-dark-o9: oklch(33.94% 0.1888 261.5 / 0.9);
 	--c-yellow: oklch(90.07% 0.21 98.27);
 	--c-yellow-o9: oklch(90.07% 0.21 98.27 / 0.9);
-	--c-orange: oklch(66.98% 0.224 43.225);
-	--c-orange-o9: oklch(66.98% 0.224 43.225 / 0.9);
+	--c-yellow-o8: oklch(90.07% 0.21 98.27 / 0.8);
+	--c-orange: oklch(66.98% 0.2236 43.225);
+	--c-orange-o9: oklch(66.98% 0.2236 43.225 / 0.9);
+
+	--gradient-orange: linear-gradient(120deg, var(--c-orange) 0%, var(--c-yellow) 100%);
 }
