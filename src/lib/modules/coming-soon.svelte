@@ -23,7 +23,7 @@
 <style>
 .coming-soon-wrapper {
   --local-bg-color: var(--c-white);
-  --local-font-color: var(--c-white-o9);
+  --local-font-color: var(--c-white);
   --local-bg-opacity: 0.4;
 
   position: relative;
@@ -34,7 +34,7 @@
   flex-direction: column;
   align-items: center;
 
-  min-block-size: 50vh;
+  min-block-size: 70vh;
   padding: 5rem 3rem;
 
   color: var(--local-font-color);

@@ -27,8 +27,8 @@
     align-items: center;
     justify-content: center;
 
-    height: 98vh;
-    padding: 0 20px;
+    min-height: 90vh;
+    padding: 4rem 1.5rem;
 
     text-align: center;
 
@@ -77,19 +77,22 @@
 
     }
   }
+  .h0{
+    line-height: .9;
+  }
   .h1 {
     color: var(--local-font-color);
     transition: color 0.3s ease-in-out;
-
   }
-  .subtitles{
+  .subtitles * + *{
     /* z-index: 1; */
+    margin-block-start: 1rem;
   }
   .highlight {
     position: relative;
     color: var(--local-font-color);
+    white-space: nowrap;
     transition: color 0.3s ease-in-out;
-
     &::after{
       pointer-events: none;
       content: "";
@@ -97,15 +100,17 @@
       position: absolute;
       z-index: 2;
       top: 37%;
-      right: .5rem;
+      left: -0.25rem;
 
-      width: 99%;
+      width: 0%;
       height: 60%;
 
       opacity: .5;
       background-image: var(--noise-1);
       mix-blend-mode: overlay;
-
+      
+      animation: highlightAnimation .5s ease-in-out forwards;
+      animation-delay: 1s;
     }
 
     &::before {
@@ -114,15 +119,19 @@
 
       position: absolute;
       top: 37%;
-      right: .5rem;
+      left: -0.25rem;
+      transform-origin: left;
 
-      width: 99%;
+      width: 0%;
       height: 60%;
 
       background-image: var(--local-highlight-gradient);
       background-size: cover;
       background-blend-mode: screen;
       mix-blend-mode: var(--local-highlight-blend);
+
+      animation: highlightAnimation .5s ease-in-out forwards;
+      animation-delay: 1s;
     }
   }
 
@@ -137,5 +146,14 @@
 
     }
   }
-  
+
+  @keyframes highlightAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 99%;
+    }
+  }
+
 </style>
