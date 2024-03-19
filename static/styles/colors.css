@@ -1,8 +1,11 @@
 :root {
 	--c-black: oklch(17.76% 0 0);
 	--c-black-o9: oklch(17.76% 0 0 / 0.9);
+	--c-black-o1: oklch(17.76% 0 0 / 0.1);
 	--c-white: oklch(96.41% 0 102.07);
 	--c-white-o9: oklch(96.41% 0 102.07 / 0.9);
+	--c-white-o5: oklch(96.41% 0 102.07 / 0.5);
+	--c-white-o1: oklch(96.41% 0 102.07 / 0.1);
 	--c-green: oklch(55% 0.14 172);
 	--c-green-o9: oklch(55% 0.14 172 / 0.9);
 	--c-blue: oklch(37% 0.206 261.5);

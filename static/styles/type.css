@@ -26,3 +26,9 @@
 .h3 {
 	font-size: 2.25rem;
 }
+
+.p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}

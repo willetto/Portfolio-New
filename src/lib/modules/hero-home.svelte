@@ -3,7 +3,7 @@
 </script>
 
 <div class="hero-wrapper" style={`--texture-url: url(${texture})`}>
-  <h1 class="h0 hero-title" title="Hi, I'm Trey">Hi, I'm Trey</h1>
+  <h1 class="h0 hero-title" title="Hi, I'm Trey.">Hi, I'm Trey.</h1>
   <div class="subtitles">
     <p class="h1">I care about <span class="highlight">crafting thoughtfully.</span></p>
     <p class="h1">I work as a <span class="highlight">front-end web developer.</span></p>
@@ -20,14 +20,14 @@
 
     position: relative;
 
-overflow: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
+    height: 98vh;
     padding: 0 20px;
 
     text-align: center;

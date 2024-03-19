@@ -1,6 +1,15 @@
 <script>
-	import HeroHome from "$lib/modules/hero-home.svelte";
+	import ComingSoon from "$lib/modules/coming-soon.svelte";
+import HeroHome from "$lib/modules/hero-home.svelte";
 </script>
 
-<HeroHome>
-</HeroHome>
+<HeroHome/>
+<ComingSoon/>
+
+<style>
+	:root{
+		scroll-behavior: smooth;
+		overscroll-behavior: contain;
+	}
+	
+</style>
