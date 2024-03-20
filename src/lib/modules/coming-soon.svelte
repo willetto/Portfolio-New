@@ -14,7 +14,7 @@
   <div class="center">
     <h2 class="h2">Welcome!</h2>
     <p class="p">
-      I'm currently overhauling my site. In the meantime, here are a few links to recent my work:
+      I'm currently overhauling my site. In the meantime, here are a few links to my recent work:
     </p>
     <Cards/>
   </div>
