@@ -14,7 +14,7 @@
   <div class="center">
     <h2 class="h2">Welcome!</h2>
     <p class="p">
-      I'm currently overhauling my site.<br/>In the meantime, here are a few links to recent my work:
+      I'm currently overhauling my site. In the meantime, here are a few links to recent my work:
     </p>
     <Cards/>
   </div>
@@ -113,7 +113,7 @@
 }
 
 p, h2{
-  max-width: 50ch;  
+  max-width: 40ch;  
   margin-inline: auto;
 margin-inline-start: 0;
 

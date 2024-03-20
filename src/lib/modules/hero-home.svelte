@@ -81,6 +81,7 @@
     line-height: .9;
   }
   .h1 {
+    width: 100%;
     color: var(--local-font-color);
     transition: color 0.3s ease-in-out;
   }
