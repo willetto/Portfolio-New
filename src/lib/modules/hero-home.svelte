@@ -76,7 +76,7 @@
 
 			text-shadow:
 				-3px 2px 6px #fff,
-				0 0 0 var(--c-black);
+				0 0 0 var(--c-neutral-900);
 
 			opacity: 0.4;
 			background-color: var(--c-neutral-900);
