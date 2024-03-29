@@ -13,13 +13,13 @@
 
 <style>
 	.hero-wrapper {
-		--local-bg-color: var(--c-white);
-		--local-font-color: var(--c-green);
+		--local-bg-color: var(--c-neutral-100);
+		--local-font-color: var(--c-green-600);
 		--local-highlight-gradient: conic-gradient(
 			from 190deg at 0% 0% in oklch,
-			var(--c-yellow) 60%,
-			var(--c-yellow-o8) 75%,
-			var(--c-yellow) 95%
+			var(--c-yellow-300) 60%,
+			var(--c-yellow-500) 75%,
+			var(--c-yellow-300) 95%
 		);
 		--local-highlight-blend: multiply;
 		--local-texture-opacity: 0.2;
@@ -76,10 +76,10 @@
 
 			text-shadow:
 				-3px 2px 6px #fff,
-				0 0 0 var(--c-black);
+				0 0 0 var(--c-neutral-900);
 
 			opacity: 0.4;
-			background-color: var(--c-black);
+			background-color: var(--c-neutral-900);
 			background-clip: text;
 			mix-blend-mode: multiply;
 		}
@@ -145,13 +145,13 @@
 
 	@media (prefers-color-scheme: dark) {
 		.hero-wrapper {
-			--local-bg-color: oklch(21.91% 0.1213 261.4060308831826);
-			--local-font-color: var(--c-white-o9);
+			--local-bg-color: var(--c-blue-800);
+			--local-font-color: var(--c-neutral-200);
 			--local-highlight-gradient: conic-gradient(
 				from 190deg at 0% 0% in oklch,
-				var(--c-blue-o8) 60%,
-				var(--c-blue) 75%,
-				var(--c-blue-o8) 95%
+				var(--c-blue-800) 60%,
+				var(--c-blue-600) 75%,
+				var(--c-blue-800) 95%
 			);
 			--local-highlight-blend: screen;
 			--local-texture-opacity: 0.4;
