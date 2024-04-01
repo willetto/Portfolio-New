@@ -9,7 +9,7 @@
 
 <div class="coming-soon-wrapper">
 	<div class="background parallax" bind:this={parallaxElement}>
-		<img src={garden} alt="" style={`transform: translateY(${scroll * -0.2}px);`} />
+		<img src={garden} loading="lazy" alt="" style={`transform: translateY(${scroll * -0.2}px);`} />
 	</div>
 	<div class="center">
 		<h2 class="h2">Welcome!</h2>
