@@ -1,8 +1,8 @@
 <script lang="ts">
 	import garden from '$lib/imgs/garden-bg.jpg';
 	import Cards from './cards.svelte';
-	let scroll: number = 0;
-	let parallaxElement: HTMLElement;
+	let scroll: number = $state(0);
+	let parallaxElement: HTMLElement = $state();
 </script>
 
 <svelte:window bind:scrollY={scroll} />

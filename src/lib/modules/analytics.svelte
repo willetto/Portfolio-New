@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import { page } from '$app/stores';
 
-	$: {
+	run(() => {
 		if (typeof gtag !== 'undefined') {
 			gtag('config', 'G-0023KB683H', {
 				page_title: document.title,
@@ -9,7 +11,7 @@
 				anonymize_ip: true
 			});
 		}
-	}
+	});
 </script>
 
 <svelte:head>
