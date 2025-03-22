@@ -22,8 +22,8 @@
 
 <style>
 	.coming-soon-wrapper {
-		--local-bg-color: var(--c-neutral-100);
-		--local-font-color: var(--c-neutral-100);
+		--local-bg-color: var(--c-white);
+		--local-font-color: var(--c-white);
 		--local-bg-opacity: 0.4;
 
 		position: relative;
@@ -75,7 +75,7 @@
 			height: 100%;
 
 			opacity: var(--local-bg-opacity);
-			background-color: var(--c-neutral-900);
+			background-color: var(--c-black);
 			mix-blend-mode: multiply;
 
 			transition: opacity 0.3s ease-in-out;
@@ -123,7 +123,7 @@
 	}
 	h2 {
 		margin-block-end: 1rem;
-		color: var(--c-);
+		color: var(--c-white);
 	}
 	p {
 		margin-block-end: 2rem;
@@ -131,8 +131,8 @@
 
 	@media (prefers-color-scheme: dark) {
 		.coming-soon-wrapper {
-			--local-bg-color: var(--c-green-900);
-			--local-font-color: var(--c-neutral-200);
+			--local-bg-color: var(--c-green);
+			--local-font-color: var(--c-white);
 			--local-bg-opacity: 0.6;
 		}
 	}

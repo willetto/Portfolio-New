@@ -13,8 +13,8 @@
 
 <style>
 	.hero-wrapper {
-		--local-bg-color: var(--c-neutral-100);
-		--local-font-color: var(--c-green-600);
+		--local-bg-color: var(--c-white);
+		--local-font-color: var(--c-green);
 		--local-highlight-gradient: conic-gradient(
 			from 0deg at 54% -22% in oklch,
 			var(--c-yellow) 20%,
@@ -35,7 +35,7 @@
 		justify-content: center;
 
 		min-height: 90vh;
-		padding: 4rem 1.5rem;
+		padding: 10rem 1.5rem 6rem 1.5rem;
 
 		text-align: center;
 
@@ -80,10 +80,10 @@
 
 			text-shadow:
 				-3px 2px 6px #fff,
-				0 0 0 var(--c-neutral-900);
+				0 0 0 var(--c-black);
 
 			opacity: 0.4;
-			background-color: var(--c-neutral-900);
+			background-color: var(--c-black);
 			background-clip: text;
 			mix-blend-mode: multiply;
 		}
@@ -149,8 +149,8 @@
 
 	@media (prefers-color-scheme: dark) {
 		.hero-wrapper {
-			--local-bg-color: var(--c-blue-800);
-			--local-font-color: var(--c-neutral-200);
+			--local-bg-color: var(--c-blue);
+			--local-font-color: var(--c-white);
 			--local-highlight-gradient: conic-gradient(
 				from 0deg at 54% -22% in oklch,
 				var(--c-blue-o5) 20%,

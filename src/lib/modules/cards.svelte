@@ -58,22 +58,24 @@
 
 		text-align: left;
 
-		background-color: oklch(var(--lch-neutral-900) / 0.1);
+		/* background-color: var(--c-white-o1); */
 		backdrop-filter: blur(5px);
-		border: 1px solid oklch(var(--lch-neutral-100) / 0.1);
+		border: 1px solid var(--c-white-o1);
 		border-radius: 5px;
-		box-shadow: 0 0 30px -10px var(--c-neutral-800);
+		box-shadow: 0 0 30px -10px var(--c-black);
 
 		transition:
 			background 0.15s ease-in-out,
-			backdrop-filter 0.15s ease-in-out;
+			backdrop-filter 0.15s ease-in-out,
+			scale 0.15s ease-in-out;
 		& a {
 			color: inherit;
 			text-decoration: none;
 		}
 		&:hover,
 		&:focus {
-			background-color: oklch(var(--lch-neutral-100) / 0.1);
+			scale: 1.01;
+			background-color: var(--c-white-o1);
 			backdrop-filter: blur(10px);
 		}
 	}
@@ -106,7 +108,7 @@
 			font-style: normal;
 			color: #e65737;
 			text-decoration: none;
-			background-color: var(--c-neutral-100);
+			background-color: var(--c-white);
 		}
 	}
 </style>
