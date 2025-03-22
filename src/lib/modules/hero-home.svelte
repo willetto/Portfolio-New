@@ -16,11 +16,12 @@
 		--local-bg-color: var(--c-neutral-100);
 		--local-font-color: var(--c-green-600);
 		--local-highlight-gradient: conic-gradient(
-			from 190deg at 0% 0% in oklch,
-			var(--c-yellow-300) 60%,
-			var(--c-yellow-500) 75%,
-			var(--c-yellow-300) 95%
+			from 0deg at 54% -22% in oklch,
+			var(--c-yellow) 20%,
+			var(--c-yellow-o5) 42%,
+			var(--c-yellow) 72%
 		);
+
 		--local-highlight-blend: multiply;
 		--local-texture-opacity: 0.2;
 
@@ -63,7 +64,10 @@
 	}
 	.hero-title {
 		position: relative;
+
+		backface-visibility: hidden;
 		background-image: var(--gradient-orange);
+		background-attachment: fixed;
 		background-clip: text;
 
 		-webkit-text-fill-color: transparent;
@@ -117,7 +121,7 @@
 			background-image: var(--noise-1);
 			mix-blend-mode: overlay;
 
-			animation: highlightAnimation 0.5s ease-in-out forwards;
+			animation: highlightAnimation 0.5s ease-in-out forwards 0.3s;
 			animation-delay: 1s;
 		}
 
@@ -138,7 +142,7 @@
 			background-blend-mode: screen;
 			mix-blend-mode: var(--local-highlight-blend);
 
-			animation: highlightAnimation 0.5s ease-in-out forwards;
+			animation: highlightAnimation 0.5s ease-in-out forwards 0.3s;
 			animation-delay: 1s;
 		}
 	}
@@ -148,10 +152,10 @@
 			--local-bg-color: var(--c-blue-800);
 			--local-font-color: var(--c-neutral-200);
 			--local-highlight-gradient: conic-gradient(
-				from 190deg at 0% 0% in oklch,
-				var(--c-blue-800) 60%,
-				var(--c-blue-600) 75%,
-				var(--c-blue-800) 95%
+				from 0deg at 54% -22% in oklch,
+				var(--c-blue-o5) 20%,
+				var(--c-blue) 42%,
+				var(--c-blue-o5) 72%
 			);
 			--local-highlight-blend: screen;
 			--local-texture-opacity: 0.4;
