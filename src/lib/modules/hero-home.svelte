@@ -6,7 +6,7 @@
 	<h1 class="h0 hero-title" title="Hi, I'm Trey.">Hi, I'm Trey.</h1>
 	<div class="subtitles">
 		<p class="h1">I care about <span class="highlight">crafting thoughtfully.</span></p>
-		<p class="h1">I work as a <span class="highlight">front-end web developer.</span></p>
+		<p class="h1">I work as a <span class="highlight">freelance web developer.</span></p>
 		<p class="h1">I aim to <span class="highlight">empower others.</span></p>
 	</div>
 </div>
