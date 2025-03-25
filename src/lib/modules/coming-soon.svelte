@@ -14,7 +14,12 @@
 	<div class="center">
 		<h2 class="h2">Welcome!</h2>
 		<p class="p">
-			I'm currently overhauling my site. In the meantime, here are a few links to my recent work:
+			I'm currently overhauling my site. In the meantime, here are a few links to my recent work.
+		</p>
+		<p class="p">
+			<a href="mailto:trey.willetto@gmail.com" class="link" target="_blank">
+				Feel free to drop me a line!
+			</a>
 		</p>
 		<Cards />
 	</div>
@@ -127,6 +132,16 @@
 	}
 	p {
 		margin-block-end: 2rem;
+	}
+	.link {
+		color: var(--c-yellow);
+		text-underline-offset: 3px;
+		transition: color 0.2s ease-in-out;
+	}
+	.link:hover,
+	.link:focus-visible {
+		color: var(--c-white);
+		text-underline-offset: 4px;
 	}
 
 	@media (prefers-color-scheme: dark) {
