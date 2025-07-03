@@ -1,4 +1,9 @@
 {
 	"cSpell.words": ["stylelint"],
-	"stylelint.validate": ["css", "svelte", "html"]
+	"stylelint.validate": ["css", "svelte", "html"],
+	"emmet.includeLanguages": {
+		"svelte": "html"
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.showExpandedAbbreviation": "always"
 }
