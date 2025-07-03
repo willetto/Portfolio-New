@@ -4,10 +4,9 @@
 	import Skills from '$lib/modules/skills.svelte';
 </script>
 
+<!-- <Skills /> -->
 <HeroHome />
 <ComingSoon />
-
-<!-- <Skills /> -->
 
 <style>
 	:root {

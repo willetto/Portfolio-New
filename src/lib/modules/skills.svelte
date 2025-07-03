@@ -24,7 +24,7 @@
 		<SkillItem svg={patreon} color="#000" shape="oval" angle={10} title="Patreon" />
 		<SkillItem svg={storyblok} color="#09B3AF" shape="square" angle={-10} title="Storyblok" />
 		<SkillItem svg={ts} color="#3178C6" shape="square" angle={10} title="TypeScript" />
-		<SkillItem svg={vue} color="#4FC08D" shape="round" title="Vue" />
+		<SkillItem svg={vue} color="#4FC08D" shape="oval" title="Vue" />
 	</div>
 </div>
 
@@ -32,14 +32,16 @@
 	.skills-wrapper {
 		display: grid;
 		place-items: center;
-		padding: 3rem 1rem;
+		padding: 5rem 3rem;
 	}
 	.skills-list {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: row;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		width: 50%;
+
+		width: 100%;
+		/* max-width: 800px; */
 	}
 </style>

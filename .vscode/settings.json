@@ -1,6 +1,11 @@
 {
 	"cSpell.words": ["stylelint"],
 	"stylelint.validate": ["css", "svelte", "html"],
+	"stylelint.autoFixOnSave": true,
+	"stylelint.enable": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "explicit"
+	},
 	"emmet.includeLanguages": {
 		"svelte": "html"
 	},

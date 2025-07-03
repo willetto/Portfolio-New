@@ -37,16 +37,21 @@
 
 <style>
 	.skill {
-		margin: -5px -3px;
+		position: relative;
+		transform: rotate(var(--rotation, 0deg)) scale(1.05);
+
+		overflow: hidden;
+
 		height: fit-content;
+		margin: -5px -3px;
 		padding: var(--sticker-padding);
 		border-radius: 1rem;
-		background-color: #f2f0e9;
 		border-radius: var(--sticker-shape);
-		position: relative;
+
+		background-color: #f2f0e9;
 		box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.5);
-		transform: rotate(var(--rotation, 0deg)) scale(1.05);
-		transition: transform 0.3s ease-in-out;
+
+		transition: transform 0.25s ease-in-out;
 	}
 
 	.skill:hover,
@@ -57,31 +62,40 @@
 
 	.skill:after {
 		content: '';
+
 		position: absolute;
 		inset: 3px;
+
 		border: 3px solid var(--border-color);
 		border-radius: var(--sticker-shape);
 	}
 
 	.skill-texture {
-		position: absolute;
-		inset: 0;
-		z-index: 1;
-		filter: grayscale(50%) brightness(0.75);
-		opacity: 0.5;
-		border-radius: var(--sticker-shape);
-		object-fit: cover;
-		height: 100%;
-		width: 100%;
-		mix-blend-mode: hard-light;
 		pointer-events: none;
+
+		position: absolute;
+		z-index: 1;
+		inset: 0;
+
+		width: 100%;
+		height: 100%;
+		border-radius: var(--sticker-shape);
+
+		opacity: 0.5;
+		object-fit: cover;
+		filter: grayscale(50%) brightness(0.75);
+		mix-blend-mode: hard-light;
 	}
 
 	.skill-icon {
-		width: 60px;
-		height: 60px;
+		pointer-events: none;
+
 		position: relative;
 		z-index: 2;
+
+		width: 60px;
+		height: 60px;
+
 		object-fit: contain;
 	}
 </style>
