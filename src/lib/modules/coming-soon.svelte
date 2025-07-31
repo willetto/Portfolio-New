@@ -1,15 +1,33 @@
 <script lang="ts">
 	import garden from '$lib/imgs/garden-bg.jpg';
 	import Cards from './cards.svelte';
-	let scroll: number = 0;
-	let parallaxElement: HTMLElement;
+
+	let scroll = $state(0);
+	let parallaxElement = $state<HTMLElement | null>(null);
+
+	// Calculate parallax based on element position with clamping
+	const parallaxStyle = $derived(() => {
+		if (!parallaxElement) return '';
+
+		// Add scroll as a dependency to trigger recalculation
+		const _ = scroll;
+
+		const elementTop = parallaxElement.getBoundingClientRect().top;
+		const elementHeight = parallaxElement.offsetHeight;
+		const maxParallax = elementHeight * 0.5; // Max 30% of element height
+		const parallaxOffset = Math.max(-maxParallax, Math.min(0, elementTop * -0.1));
+
+		console.log('Parallax debug:', { elementTop, elementHeight, maxParallax, parallaxOffset });
+
+		return `transform: translateY(${parallaxOffset}px);`;
+	});
 </script>
 
 <svelte:window bind:scrollY={scroll} />
 
 <div class="coming-soon-wrapper">
 	<div class="background parallax" bind:this={parallaxElement}>
-		<img src={garden} alt="" style={`transform: translateY(${scroll * -0.2}px);`} />
+		<img src={garden} alt="" style={parallaxStyle()} />
 	</div>
 	<div class="center">
 		<h2 class="h2">Welcome!</h2>
@@ -90,14 +108,13 @@
 		position: absolute;
 		z-index: -2;
 		inset: 0;
-
 		overflow: hidden;
 
-		margin-bottom: 0;
+		/* margin-bottom: 0; */
 		& img {
 			/* object-position: top; */
 			width: 100%;
-			height: 120%;
+			height: 150%;
 			object-fit: cover;
 			object-position: top;
 		}
